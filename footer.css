@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+section{
+    padding: 5% 10%;
+
+}
+.main-text h5{
+    font-size: 16px;
+    color: #ee1c47;
+    font-weight: 500;
+}
+.main-text h1{
+    color: black;
+    font-size: 65px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px ;
+}
+
+.main-text p {
+    color: #333c56;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px
+
+}
+
+.main-btn{
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all .42s ease;
+
+}
+
+.main-btn:hover{
+    background: black;
+    color: white;
+}
+
+
+
+
+header.sticky{
+    background: white;
+    padding: 20px 10%;
+    box-shadow: 0px 9px 10px rgb(0 0 0 / 10%);
+
+}
+
+/* footer */
+/* contact-section */
+
+.contact{
+    background-color: whitesmoke;
+}
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,auto));
+    gap: 3rem;
+
+}
+
+.first-info img{
+    width: 140px;
+    height: auto;
+
+}
+
+.contact-info h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+
+}
+
+
+.contact-info p:hover{
+font-weight: 500;
+}
+
+
+
+.social-icon i{
+    color: #565656;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+
+}
+.social-icon i:hover{
+    transform: scale(1.2);
+    color: #ee1c47;
+}
+
+.end-text{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+.end-text p {
+    color: #111;
+
+}
+
+
+/* responsive-css */
+
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .2s;
+    }
+    .main-home{
+        width: 100%;
+    }
+}
+
+@media(max-width:630px){
+
+    .main-text h1{
+        font-size: 50px;
+        transition: .2s;
+    }
+
+    .main-text p{
+        font-size: 18px;
+        transition: .2s;
+    }
+
+    .main-btn{
+        padding: 10px 20px;
+        transition: .2s;
+    }
+
+}
+#menu-icon {
+    display: none;
+}
+
+@media(max-width:750px){
+    #menu-icon{
+        display: block;
+    }
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+
+    .navmenu.open{
+        right: 0;
+    }
+}
+
+.end-text p {
+    color: #111;
+  
+  }
+  .contact , .end-text{
+    background-color: black;
+  }
+  .contact p , .contact h4  {
+    color: white;
+  }
+  .end-text p {
+    color: white;
+    font-size: 14px;
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="css/login.css">
+
+
+</head>
+<body>
+<h1 onclick="window.location.href='index.html'">SimpleLooks</h1>
+
+<form action="index.html" >
+ 
+
+  <div class="container">
+    <h3>Login</h3>
+
+    <label for="uname"><b>Username</b></label>
+    <input type="email" placeholder="Enter Email" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+     
+    
+    <label for="phone"><b>Phone Number</b></label>
+    <input type="tel" pattern="012[0-9]{8}" pattern="015[0-9]{8}" pattern="011[0-9]{8}" pattern="010[0-9]{8}" placeholder="Enter Phone Number" name="phone" required>
+
+    <button type="submit " onclick="validate()">Login</button>
+    
+  </div>
+
+  </div>
+</form>
+
+<script src="login.html"></script>
+</body>
+</html>

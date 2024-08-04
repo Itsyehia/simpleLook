@@ -1,0 +1,78 @@
+
+form {
+    border: 3px solid #f1f1f1;
+  margin: 50px;
+  width: 600px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+input[type=email], input[type=password] ,  input[type=tel] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+h1:hover{
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+h3{
+  padding-bottom: 20px;
+}
+.container {
+  padding: 16px;
+  
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+@media screen and (max-width: 750px) {
+  form {
+    
+  width: 300px;
+}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+input[type=tel]:invalid {
+    border-color: red;
+}

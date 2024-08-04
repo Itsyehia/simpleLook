@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+ <!-- header  -->
+ <header class="sticky">
+  <a href="index.html" class="logo" ><h3>SimpleLooks</h3></a>
+
+  <ul class="navmenu">
+    <li><a href="index.html">home</a></li>
+    <li><a href="#">shop</a></li>
+    <li><a href="products.html">products</a></li>
+      
+      
+  </ul>
+  <div class="nav-icon">
+      
+      <a href="#"><i class='bx bx-user'></i> </a>
+      <a href="cart.html">
+          <i class='bx bx-cart'></i>
+      </a>
+      <div id="menu-icon">
+          <a href="#" class="menu" id="burger-menu"><i class='bx bx-menu'></i></a>
+      </div>
+  </div>
+</header>
+
+
+<!-- items list section -->
+<section class="container content-section" id="shopping-cart">
+  <h3 style="text-decoration: none; text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+  <table class="table table-hover table-cart">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody class="cart-items">
+      <!-- Cart items will be added here by JavaScript -->
+    </tbody>
+  </table>
+
+  <div class="cart-total"> 
+    <strong class="cart-total-title">Total</strong>
+    <span class="cart-total-price" style="text-align: right;">$0</span>
+  </div>
+
+  
+  <div class="btn-purchase" style="display: flex; align-items: center; justify-content: space-between;">
+
+    <button id="back-button" onclick="window.location.href='products.html'" type="button" style="padding: 10px 40px; background-color: white; color: black; border: 1px solid black;">
+    RETURN</button>
+
+    <button class="confirm-payemnet" type="button" style="padding: 10px 40px; background-color: black;">
+     PURCHASE 
+    </button>
+   
+  </div>
+  
+</section>
+
+
+
+<!-- contact-section -->
+<section class="contact">
+  <div class="contact-info">
+     
+
+  <div class="secon-info">
+      <h4>support</h4>
+      <p>contact us </p>
+      <p>size guide</p>
+
+  </div>
+  <div class="third-info">
+      <h4>shop</h4>
+      <p onclick="window.location.href='products.html'">Shop men</p>
+      <p onclick="window.location.href='products.html'">Shop women</p>
+      <p onclick="window.location.href='products.html'">sale</p>
+  </div>
+
+
+  <div class="fourth-info">
+      <h4>company</h4>
+      <p>about us</p>    
+  </div>
+  
+  <div class="five">
+      <h4>subscribe</h4>
+      <p>subscribe to our newsletter</p>
+      <p>get 10% off your first order</p>
+
+  </div>
+</div>
+</section>
+
+<div class="end-text">
+  <p>copyright @2024. all rights reserved. Created by Yehia </p>
+</div>
+
+
+
+
+
+
+
+<script src="cart.js"></script>
+</body>
+</html>
