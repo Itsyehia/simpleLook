@@ -1,0 +1,133 @@
+/* swiper css  */
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+.bodySlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+  min-height: 80vh;
+}
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #FFF;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+
+
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.button {
+  color: black;
+  padding: 12px 20px;
+  background-color: white;
+  /*border-radius: 6px;*/
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid black;
+  text-decoration: none;
+  font-size: 13px;
+  position: relative;
+  margin-top: 160px;
+}
+
+.button:hover {
+  background: black;
+  color: white;
+
+}
+
+.swiper-navBtn {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  font-weight: bolder;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: black;
+  opacity: 1;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+
+.swiper-slide {
+  background-image: url("https://basiclook.com/cdn/shop/files/ribbed-thick-strap-basic-top-the-basic-look-154007.jpg?v=1721301178&width=360");
+  height: max(400px);
+
+}
+
