@@ -1,4 +1,5 @@
 function getProduct(){
+    // data to the items in json format 
     const products = [
         {
             "image": "https://basiclook.com/cdn/shop/files/BOO07117.jpg?v=1721597286&width=1440",
@@ -107,7 +108,8 @@ function addItemToCart(title, price, imageSrc) {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
 }
 
-// swiper js var swiper = new Swiper(".slide-content", {
+// swiper js
+
     var swiper = new Swiper(".slide-content", {
         slidesPerView: 3,
         spaceBetween: 25,
@@ -140,4 +142,27 @@ function addItemToCart(title, price, imageSrc) {
           },
         },
       });
+   
       
+
+// button to go to the top logic 
+// Get the button
+let mybutton = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+mybutton.onclick = function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
