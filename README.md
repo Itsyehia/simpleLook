@@ -1,6 +1,3 @@
-Here’s a sample `README.md` file for the **Simple Look** e-commerce web app:
-
-```markdown
 # Simple Look E-Commerce Web App
 
 ## Project Overview
